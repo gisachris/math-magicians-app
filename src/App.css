@@ -68,8 +68,8 @@ body {
 .mainKeys {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(5,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 0;
   width: 100%;
   height: 100%;
@@ -80,13 +80,13 @@ body {
 .MainActionTask {
   font-size: 1.5rem;
   font-weight: bolder;
-  padding-top: 20px; 
-  text-align: center; 
+  padding-top: 20px;
+  text-align: center;
   border: 0.1rem solid grey;
 }
 
 .zeroSpan {
-  grid-column: span 2; 
+  grid-column: span 2;
 }
 
 .SideBar {
@@ -101,7 +101,7 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5,1fr);
+  grid-template-rows: repeat(5, 1fr);
   float: left;
   margin: 0;
   padding: 0;
