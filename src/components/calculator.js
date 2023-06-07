@@ -3,11 +3,11 @@ import TopSection from './topSection';
 import SideBar from './sideActions';
 import MainActions from './mainActions';
 
-const Holder = () => (
+const AppHolder = () => (
   <section className="holder">
     <TopSection initial={0} />
     <MainActions />
     <SideBar />
   </section>
 );
-export default Holder;
+export default AppHolder;

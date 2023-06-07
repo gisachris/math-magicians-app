@@ -1,10 +1,10 @@
 import './App.css';
-import Holder from './components/calculator';
+import AppHolder from './components/calculator';
 
 function App() {
   return (
     <div className="App">
-      <Holder />
+      <AppHolder />
     </div>
   );
 }
