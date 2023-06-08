@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const SideBar = ({handleclick}) => {
+const SideBar = ({ handleclick }) => {
   const divide = '\u00F7';
   const multiply = 'x';
   const subtract = '-';
@@ -16,7 +16,7 @@ const SideBar = ({handleclick}) => {
         <li className="actionTask equals" onClick={handleclick}>{equals}</li>
       </ul>
     </section>
-  )
-}
+  );
+};
 
 export default SideBar;

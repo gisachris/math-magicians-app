@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-const TopSection = ({initial,handleInputChange,CalculatorData}) => {
+const TopSection = ({ initial, handleInputChange, CalculatorData }) => {
   const display = () => {
-    const {total,next,operation} = CalculatorData;
+    const { total, next, operation } = CalculatorData;
     let show = '';
-    if(total){
+    if (total) {
       show += total;
     }
 
@@ -17,14 +17,14 @@ const TopSection = ({initial,handleInputChange,CalculatorData}) => {
     }
 
     return show;
-  }
+  };
 
   return (
     <section className="answer">
       <span className="answerSlot">{display()}</span>
-      <input type="text" className="input" id="input" placeholder={initial} value={CalculatorData.next || 0} onChange={handleInputChange}></input>
+      <input type="text" className="input" id="input" placeholder={initial} value={CalculatorData.next || 0} onChange={handleInputChange} />
     </section>
-  )
-}
+  );
+};
 
 export default TopSection;
