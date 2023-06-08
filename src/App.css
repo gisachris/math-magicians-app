@@ -40,11 +40,19 @@ body {
   background-color: #a6a6a6aa;
 }
 
+.answerSlot {
+  background-color: #a6a6a6aa;
+  height: 50%;
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
 .input {
   box-sizing: border-box;
   float: right;
   width: 100%;
-  height: 100%;
+  height: 50%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -83,6 +91,7 @@ body {
   padding-top: 20px;
   text-align: center;
   border: 0.1rem solid grey;
+  cursor: pointer;
 }
 
 .zeroSpan {
@@ -113,4 +122,5 @@ body {
   font-weight: bolder;
   text-align: center;
   border: 0.1rem solid grey;
+  cursor: pointer;
 }
