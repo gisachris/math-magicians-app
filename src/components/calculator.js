@@ -29,7 +29,7 @@ const AppHolder = () => {
   return (
     <section className="holder">
       <TopSection
-        initial={0}
+        initial="0"
         handleInputChange={handleInputChange}
         CalculatorData={CalculatorData}
       />
