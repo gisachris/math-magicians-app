@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const TopSection = ({ initial, handleInputChange, CalculatorData }) => {
   const display = () => {
@@ -25,6 +26,16 @@ const TopSection = ({ initial, handleInputChange, CalculatorData }) => {
       <input type="text" className="input" id="input" placeholder={initial} value={CalculatorData.next || 0} onChange={handleInputChange} />
     </section>
   );
+};
+
+TopSection.propTypes = {
+  initial: propTypes.string.isRequired,
+  handleInputChange: propTypes.func.isRequired,
+  CalculatorData: propTypes.shape({
+    total: propTypes.string.isRequired,
+    operation: propTypes.string.isRequired,
+    next: propTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default TopSection;

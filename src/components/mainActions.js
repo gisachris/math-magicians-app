@@ -1,6 +1,8 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const MainActions = ({ handleclick }) => (
+
   <section className="mainActions">
     <ul className="mainKeys">
       <li className="MainActionTask" onClick={handleclick}>AC</li>
@@ -20,5 +22,9 @@ const MainActions = ({ handleclick }) => (
     </ul>
   </section>
 );
+
+MainActions.propTypes = {
+  handleclick: propTypes.func.isRequired,
+};
 
 export default MainActions;

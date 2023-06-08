@@ -15,7 +15,6 @@ const AppHolder = () => {
     const buttonData = event.target.textContent;
     const updatedCalculatorData = calculate(CalculatorData, buttonData);
     setCalculatorData(updatedCalculatorData);
-    console.log(updatedCalculatorData);
   };
 
   const handleInputChange = (event) => {
@@ -29,7 +28,11 @@ const AppHolder = () => {
 
   return (
     <section className="holder">
-      <TopSection initial={0} handleInputChange={handleInputChange} CalculatorData={CalculatorData} />
+      <TopSection
+        initial={0}
+        handleInputChange={handleInputChange}
+        CalculatorData={CalculatorData}
+      />
       <MainActions handleclick={handleclick} />
       <SideBar handleclick={handleclick} />
     </section>

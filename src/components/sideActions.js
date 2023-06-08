@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const SideBar = ({ handleclick }) => {
   const divide = '\u00F7';
@@ -17,6 +18,10 @@ const SideBar = ({ handleclick }) => {
       </ul>
     </section>
   );
+};
+
+SideBar.propTypes = {
+  handleclick: propTypes.func.isRequired,
 };
 
 export default SideBar;
