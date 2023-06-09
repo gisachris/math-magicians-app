@@ -25,7 +25,7 @@ body {
 .generic {
   width: 80%;
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -37,7 +37,7 @@ i {
 .quoteSection {
   width: 80%;
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0;
   font-size: 1rem;
 }
 
