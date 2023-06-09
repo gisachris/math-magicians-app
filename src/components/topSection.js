@@ -32,7 +32,7 @@ TopSection.propTypes = {
   initial: propTypes.string.isRequired,
   handleInputChange: propTypes.func.isRequired,
   CalculatorData: propTypes.shape({
-    total: propTypes.string,
+    total: propTypes.number,
     operation: propTypes.string,
     next: propTypes.string,
   }).isRequired,
