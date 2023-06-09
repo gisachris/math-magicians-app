@@ -19,6 +19,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.generic {
+  width: 80%;
+  text-align: center;
+  padding: 20px 0px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+i {
+  color: red;
+}
+
+.quoteSection {
+  width: 80%;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 1rem;
+}
+
+.acQoute {
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.author {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .holder {
