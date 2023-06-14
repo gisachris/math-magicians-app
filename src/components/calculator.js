@@ -3,6 +3,7 @@ import TopSection from './topSection';
 import SideBar from './sideActions';
 import MainActions from './mainActions';
 import calculate from '../logic/calculate';
+import '../styles/calculator.css';
 
 const AppHolder = () => {
   const [CalculatorData, setCalculatorData] = useState({
@@ -27,15 +28,20 @@ const AppHolder = () => {
   };
 
   return (
-    <section className="holder">
-      <TopSection
-        initial="0"
-        handleInputChange={handleInputChange}
-        CalculatorData={CalculatorData}
-      />
-      <MainActions handleclick={handleclick} />
-      <SideBar handleclick={handleclick} />
-    </section>
+    <div className="calcWhole">
+      <h1 className="CalcText">lets do some math!</h1>
+      <div className="holderBorder">
+        <section className="holder">
+          <TopSection
+            initial="0"
+            handleInputChange={handleInputChange}
+            CalculatorData={CalculatorData}
+          />
+          <MainActions handleclick={handleclick} />
+          <SideBar handleclick={handleclick} />
+        </section>
+      </div>
+    </div>
   );
 };
 export default AppHolder;
