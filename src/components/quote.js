@@ -26,7 +26,7 @@ const Quote = () => {
       setdata(response);
       setIsloading(false);
     } catch (error) {
-      setErrorFound(error.message);
+      setErrorFound(error);
     }
   }, [fullUrl, init]);
 
@@ -46,7 +46,7 @@ const Quote = () => {
     content = (
       <span className="error generic">
         <b>error found: </b>
-        <i>{ErrorFound.message}</i>
+        <i>{ErrorFound}</i>
       </span>
     );
   } else if (data === null) {
