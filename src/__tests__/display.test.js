@@ -73,20 +73,19 @@ describe('QuotePage Snapshots', () => {
     const tree = renderer.create(<Quote />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
+
   it('renders correctly with text prop', () => {
     const tree = renderer.create(<Quote text="This is a quote." />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
+
   it('renders correctly with author prop', () => {
     const tree = renderer.create(<Quote author="John Doe" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
+
   it('renders correctly with both props', () => {
     const tree = renderer.create(<Quote text="This is a quote." author="John Doe" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
-
