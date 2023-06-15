@@ -28,7 +28,7 @@ const AppHolder = () => {
   };
 
   return (
-    <div className="calcWhole">
+    <div className="calcWhole" data-testid="calcWhole">
       <h1 className="CalcText">lets do some math!</h1>
       <div className="holderBorder">
         <section className="holder">
