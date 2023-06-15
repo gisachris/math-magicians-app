@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/home.css';
 
 const HomePage = () => (
-  <section className="homeHolder">
+  <section className="homeHolder" data-testid="homeHolder">
     <h1 className="introTextHeader">Welcome to our Page!</h1>
     <article className="introTextParagragh">
       <h2 className="parHeader">

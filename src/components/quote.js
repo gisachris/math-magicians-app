@@ -53,7 +53,7 @@ const Quote = () => {
     content = <span className="noQuo generic">quote not found</span>;
   } else {
     content = data.map((item) => (
-      <section className="quoteSection" key={stableId}>
+      <section className="quoteSection" key={stableId} data-testid="quotes">
         <span className="acQoute">{item.quote}</span>
         <h2 className="author">
           By
