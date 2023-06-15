@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom/extend-expect';
 import HomePage from '../components/home';
 import AppHolder from '../components/calculator';
@@ -52,3 +53,40 @@ describe('QuotesPage UI testing', () => {
     delete global.fetch;
   });
 });
+
+describe('HomePage Snaphots', () => {
+  it('homePage renders correctly', () => {
+    const tree = renderer.create(<HomePage />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+describe('calculator Snaphots', () => {
+  it('calculator renders correctly', () => {
+    const tree = renderer.create(<AppHolder />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+describe('QuotePage Snapshots', () => {
+  it('QuotePage renders correctly with no props', () => {
+    const tree = renderer.create(<Quote />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  
+  it('renders correctly with text prop', () => {
+    const tree = renderer.create(<Quote text="This is a quote." />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  
+  it('renders correctly with author prop', () => {
+    const tree = renderer.create(<Quote author="John Doe" />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  
+  it('renders correctly with both props', () => {
+    const tree = renderer.create(<Quote text="This is a quote." author="John Doe" />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
