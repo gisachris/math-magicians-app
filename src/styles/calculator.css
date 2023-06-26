@@ -1,0 +1,31 @@
+.calcWhole {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.CalcText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 30%;
+}
+
+.holderBorder {
+  width: 70%;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.349);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder {
+  width: fit-content;
+  border: 2px solid black;
+}

@@ -1,0 +1,155 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(255, 192, 203, 0.268);
+}
+
+.App {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.generic {
+  width: 80%;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+i {
+  color: red;
+}
+
+.quoteSection {
+  width: 80%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+.acQoute {
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.author {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.holder {
+  width: 35%;
+  min-height: 500.25px;
+  height: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answer {
+  max-width: 100%;
+  width: 100%;
+  height: 20%;
+  background-color: #a6a6a6aa;
+}
+
+.answerSlot {
+  background-color: #a6a6a6aa;
+  height: 50%;
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+.input {
+  box-sizing: border-box;
+  float: right;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #aeacacaa;
+  text-align: right;
+  font-size: 1.3rem;
+  outline: 0;
+  padding-right: 6px;
+}
+
+.input :focus {
+  border: 0;
+  outline: 0;
+}
+
+.mainActions {
+  width: 80%;
+  height: 80%;
+}
+
+.mainKeys {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.MainActionTask {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-top: 20px;
+  text-align: center;
+  border: 0.1rem solid grey;
+  cursor: pointer;
+}
+
+.zeroSpan {
+  grid-column: span 2;
+}
+
+.SideBar {
+  width: 20%;
+  height: 80%;
+  background-color: rgb(255, 106, 0);
+}
+
+.actionsList {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.actionTask {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  border: 0.1rem solid grey;
+  cursor: pointer;
+}

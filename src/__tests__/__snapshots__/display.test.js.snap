@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage Snaphots homePage renders correctly 1`] = `
+<section
+  className="homeHolder"
+  data-testid="homeHolder"
+>
+  <h1
+    className="introTextHeader"
+  >
+    Welcome to our Page!
+  </h1>
+  <article
+    className="introTextParagragh"
+  >
+    <h2
+      className="parHeader"
+    >
+      This page is dedicated to creating the best calculator on the world wide web.
+    </h2>
+    <p
+      className="par"
+    >
+      With this tool, you can perform a wide range of calculations in a fast and user-friendly way. Whether you need to add numbers, subtract them, calculate percentages, or perform more complex operations, our calculator has got you covered
+    </p>
+    <p
+      className="par"
+    >
+       Designed with simplicity and efficiency in mind, our calculator is perfect for anyone who needs to perform calculations quickly and easily. So, why waste time and effort doing math by hand when you can use our calculator? Start crunching numbers now and see how easy it can be!
+    </p>
+  </article>
+</section>
+`;
+
+exports[`QuotePage Snapshots QuotePage renders correctly with no props 1`] = `
+<span
+  className="noQuo generic"
+>
+  quote not found
+</span>
+`;
+
+exports[`QuotePage Snapshots renders correctly with author prop 1`] = `
+<span
+  className="noQuo generic"
+>
+  quote not found
+</span>
+`;
+
+exports[`QuotePage Snapshots renders correctly with both props 1`] = `
+<span
+  className="loading generic"
+>
+  quote is loading...
+</span>
+`;
+
+exports[`QuotePage Snapshots renders correctly with text prop 1`] = `
+<span
+  className="loading generic"
+>
+  quote is loading...
+</span>
+`;
+
+exports[`calculator Snaphots calculator renders correctly 1`] = `
+<div
+  className="calcWhole"
+  data-testid="calcWhole"
+>
+  <h1
+    className="CalcText"
+  >
+    lets do some math!
+  </h1>
+  <div
+    className="holderBorder"
+  >
+    <section
+      className="holder"
+    >
+      <section
+        className="answer"
+      >
+        <span
+          className="answerSlot"
+        />
+        <input
+          className="input"
+          id="input"
+          onChange={[Function]}
+          placeholder="0"
+          type="text"
+          value={0}
+        />
+      </section>
+      <section
+        className="mainActions"
+      >
+        <ul
+          className="mainKeys"
+        >
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            AC
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            +/-
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            %
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            7
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            8
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            9
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            4
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            5
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            6
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            1
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            2
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            3
+          </li>
+          <li
+            className="MainActionTask zeroSpan"
+            onClick={[Function]}
+          >
+            0
+          </li>
+          <li
+            className="MainActionTask"
+            onClick={[Function]}
+          >
+            .
+          </li>
+        </ul>
+      </section>
+      <section
+        className="SideBar"
+      >
+        <ul
+          className="actionsList"
+        >
+          <li
+            className="actionTask divide"
+            onClick={[Function]}
+          >
+            ÷
+          </li>
+          <li
+            className="actionTask multiply"
+            onClick={[Function]}
+          >
+            x
+          </li>
+          <li
+            className="actionTask subtract"
+            onClick={[Function]}
+          >
+            -
+          </li>
+          <li
+            className="actionTask add"
+            onClick={[Function]}
+          >
+            +
+          </li>
+          <li
+            className="actionTask equals"
+            onClick={[Function]}
+          >
+            =
+          </li>
+        </ul>
+      </section>
+    </section>
+  </div>
+</div>
+`;
